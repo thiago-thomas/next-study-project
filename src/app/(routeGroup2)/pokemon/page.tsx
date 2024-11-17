@@ -30,7 +30,7 @@ export default function Pokemon() {
   };
 
   return (
-    <div className="min-h-screen p-8">
+    <div className="p-20 bg-teal-300 text-white">
       <h1 className="text-4xl font-bold mb-6">Pokemon</h1>
       <button
         onClick={handleFetchPokemons}

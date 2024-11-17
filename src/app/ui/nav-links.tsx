@@ -10,8 +10,7 @@ export default function NavLinks() {
     <nav>
       <Link className={`link px-3 ${pathname === '/' ? 'underline' : ''}`} href='/'>Home</Link>
       <Link className={`link px-3 ${pathname === '/dashboard' ? 'underline' : ''}`} href='/dashboard'>Dashboard</Link>
-      <Link className={`link px-3 ${pathname === '/about' ? 'underline' : ''}`} href='/about'>about</Link>
-    </nav>
+      <Link className={`link px-3 ${pathname === '/about' ? 'underline' : ''}`} href='/about'>About</Link>      </nav>
   )
 
 }

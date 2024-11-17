@@ -26,19 +26,31 @@ export const metadata: Metadata = {
 
 // Componente principal de layout que envolve toda a aplicação
 export default function RootLayout({
-  children
+  children,
+  team, 
+  analytics,
+  tab,
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode
+  team: React.ReactNode
+  analytics: React.ReactNode
+  tab: React.ReactNode
 }>) {
+
+  const isAdmin = false;
+
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <main>
+        <main className="bg-yellow-400">
           <span>Hi, i'm a Layout</span>
           <NavLinks />
           {children}
+          {team}
+          {tab}
+          {isAdmin && analytics}
         </main>
       </body>
     </html>

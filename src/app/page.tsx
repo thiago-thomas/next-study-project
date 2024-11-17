@@ -41,13 +41,10 @@ export default async function Home() {
     return 'Ocorreu um erro...'
   }
   */
-
-  redirect('/dashboard')
-
   
   return (
-    <div className="mt-4">
-      <h2>Pagina lenta</h2>
+    <div className="p-20 bg-teal-300 text-white">
+      <h2 className="text-4xl font-bold mb-6">HomePage</h2>
     </div>
   )
 }
