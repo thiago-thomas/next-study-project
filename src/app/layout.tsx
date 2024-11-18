@@ -27,14 +27,8 @@ export const metadata: Metadata = {
 // Componente principal de layout que envolve toda a aplicação
 export default function RootLayout({
   children,
-  team, 
-  analytics,
-  tab,
 }: Readonly<{
   children: React.ReactNode
-  team: React.ReactNode
-  analytics: React.ReactNode
-  tab: React.ReactNode
 }>) {
 
   const isAdmin = false;
@@ -48,9 +42,6 @@ export default function RootLayout({
           <span>Hi, i'm a Layout</span>
           <NavLinks />
           {children}
-          {team}
-          {tab}
-          {isAdmin && analytics}
         </main>
       </body>
     </html>
