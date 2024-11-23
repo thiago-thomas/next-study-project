@@ -12,6 +12,8 @@ export default function NavLinks() {
       <Link className={`link px-3 ${pathname === '/dashboard' ? 'underline' : ''}`} href='/dashboard'>Dashboard</Link>
       <Link className={`link px-3 ${pathname === '/about' ? 'underline' : ''}`} href='/about'>About</Link>      
       <Link className={`link px-3 ${pathname === '/interception' ? 'underline' : ''}`} href='/interception'>Interception</Link>      
+      <Link className={`link px-3 ${pathname === '/en' ? 'underline' : ''}`} href='/en'>English Lang</Link>      
+      <Link className={`link px-3 ${pathname === '/pt' ? 'underline' : ''}`} href='/pt'>Portuguese Lang</Link>      
     </nav>
   )
 
